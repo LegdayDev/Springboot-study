@@ -1,0 +1,33 @@
+package site.metacoding.demo.domain.member;
+
+import java.util.List;
+
+public class MemberDao {
+	
+	public Integer insert(String username, String password, String email) {
+		System.out.println("----------insert complete----------");
+		System.out.println("username : "+username);
+		System.out.println("password : "+password);
+		System.out.println("email : "+email);
+		return 1;
+	}
+	public Integer update(Integer id, String password) {
+		System.out.println("----------update complete----------");
+		System.out.println("id : "+id);
+		System.out.println("password : "+password);
+		return 1;
+	}
+	public Integer deleteById(Integer id) {
+		System.out.println("----------delete complete----------");
+		return 1;
+		
+	}
+	public Member findById(Integer id) {
+		Member m1 = new Member();
+		Member m2 = new Member();
+		return null;
+	}
+	public List<Member> findAll(){
+		return null;
+	}
+}

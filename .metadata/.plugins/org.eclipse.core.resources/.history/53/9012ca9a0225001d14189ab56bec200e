@@ -1,0 +1,20 @@
+package site.metacoding.demo.domain.member;
+
+public class MemberDao {
+	
+	public void insert() {
+		
+	}
+	public void update() {
+		
+	}
+	public void deleteById() {
+		
+	}
+	public Member findById() {
+		return null;
+	}
+	public List<Member> findAll(){
+		return null;
+	}
+}

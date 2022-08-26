@@ -1,0 +1,12 @@
+package site.metacoding.demo.domain.user;
+
+//디폴드생성자,풀생성자,getter,setter를 한꺼번에 <- lombok
+public class User {
+	private Integer id;
+	private String username;
+	private String password;
+	private String email;
+	
+	
+	
+}

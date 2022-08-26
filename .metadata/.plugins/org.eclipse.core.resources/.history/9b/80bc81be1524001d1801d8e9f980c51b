@@ -1,0 +1,14 @@
+package site.metacoding.demo.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+//restcontroller 는 viewresolver 작동안함
+//viewresolver 작동할려면 controller를 어노테이션해야함
+@Controller
+public class FileController {
+	@GetMapping("/file/home")
+	public String home() {
+		return "home";
+	}
+}

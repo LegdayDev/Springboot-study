@@ -1,0 +1,19 @@
+package site.metacoding.demo.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import site.metacoding.demo.domain.user.User;
+import site.metacoding.demo.domain.user.UserDao;
+
+@Controller
+public class UserController {
+	@GetMapping("/user/{id}")
+	public String detail(@PathVariable Integer id) {
+		UserDao userDao = new UserDao();
+		User userPS = new User();
+		
+		return "/user/detail";
+	}
+}

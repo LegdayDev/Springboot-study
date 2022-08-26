@@ -1,0 +1,23 @@
+package site.metacoding.demo.domain.member;
+
+import java.util.List;
+
+public class MemberDao {
+	
+	public Integer insert(String username, String password, String email) {
+		System.out.println("insert complete");
+		return 1;
+	}
+	public void update() {
+		
+	}
+	public void deleteById() {
+		
+	}
+	public Member findById() {
+		return null;
+	}
+	public List<Member> findAll(){
+		return null;
+	}
+}

@@ -1,0 +1,10 @@
+package site.metacoding.demo.web;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class RequestController {
+	public String userinfo() {
+		return "user/userinfo";
+	}
+}

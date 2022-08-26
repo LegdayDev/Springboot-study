@@ -1,0 +1,19 @@
+package site.metacoding.demo.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@Controller
+public class MemberController {
+
+	@GetMapping("/member/joinForm")
+	public String joinForm() {
+		return "member/joinForm";
+	}
+	
+	@PostMapping("/member/join")
+	public String join() {
+		return "member/loginForm";
+	}
+}
